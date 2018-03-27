@@ -1,0 +1,13 @@
+functionname(x):=block(listofvars(x));
+an: fundef(functionname)$
+ratprint: false$ linsolvewarn: false$
+/* Comments here */
+list:[]$
+for i:1 thru 12 do (cons(i,list));
+for item in list do ( if item<0 then print("Negative") );
+setts: {1,2,3};
+/*
+You can test the highlighting of this code with the command:
+$ pygmentize -f html -O full -o /tmp/example.html path/to/basic.mac
+And then view example.html in an internet browser
+*/
