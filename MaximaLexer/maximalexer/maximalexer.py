@@ -38,7 +38,7 @@ class MaximaLexer(RegexLexer):
             (r'0x[0-9a-fA-F]+[Ll]?', Number.Hex),
             (r'0[0-7]+[Ll]?', Number.Oct),
             (r'\d+[Ll]?', Number.Integer),
-            (r'[~!%^&*+=|?:<>/-]', Operator),
+            (r'[~!%^&*+=#|?:<>/-]', Operator),
             (r'[()\[\]\{\},.;$]', Punctuation),
             (r'\b(case)(.+?)(:)', bygroups(Keyword, using(this), Text)),
             (r'(and|do|else|elseif|false|for|if|in|not|or|step|then|thru|'
