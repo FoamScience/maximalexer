@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup (
   name='maximalexer',
   packages=find_packages(),
-  version='1.0',
+  version='1.1',
   author="F.M.Elwardi",
   author_email="elwardifadeli@gmail.com",
   description="A pygments lexer for Maxima (CAS) Code, based on asymptote lexer :)",
